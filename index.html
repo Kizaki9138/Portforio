@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kizaki's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="discription" content="HTML/CSSとjQueryの実践的な技術を用いて、動的なポートフォリオサイトを自作しました。デザインからコーディングまで、一貫して行っています。">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="flex-item wrapper">
+        <h1 class="site-title"><a href="#"><span>$('</span><img src="img/logo.png" alt="ロゴイメージ"><span>').portfolio</span></a></h1>
+        <nav>
+          <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="mainvisual">
+        <img src="img/mainvisual.jpg" alt="メインビジュアル">
+        <div class="title_content">
+          <img src="img/logo.png" alt="ロゴイメージ">
+          <p><span>KIZAKI RYOSEI</span><br>Portfolio Site</p>
+        </div>
+      </div>
+      <section id="profile" class="wrapper">
+        <h2 class="section-title">Profile<span>-自己紹介-</span></h2>
+        <div class="flex-item">
+          <img src="img/myImage.jpg" alt="Kizaki Ryoseiの写真">
+          <div class="absolute-content">
+            <h3 class="name"><span>木﨑 涼生</span><span>Kizaki Ryosei</span></h3>
+            <p>2002年1月19日、愛知県高浜市に生まれる。幼いころからPCに興味を持ち、父親のPCを借りてネットサーフィンをしていた。学生時代からは半導体やAIといった最先端テクノロジーに興味を持ち、青山学院大学 理工学部 電気電子工学科に入学する。しかし、大学4年に個人事業主として失敗し、うつ病を発症。同時にADHDと双極性障害も診断される。大学も中退し、約半年間実家で引きこもり生活をしていた。その中で、幼いころから続けていたPCを8月から始め、活路を見出す。2か月でWebサイトを10個作成し、ProgateでHTML/CSSを学習。10月に要件定義からすべて自作でポートフォリオを作成。今後、クラウドソーシングを用いてコーディングをメインで案件を受注していく。</p>
+          </div>
+        </div>
+      </section>
+      <section id="work" class="wrapper">
+        <h2 class="section-title">Work<span>-制作実績-</span></h2>
+        <p class="text"><span><a href="https://code-jump.com/" target="_blank">Codejump</a></span>に記載されている模写練習用サイトを用いて、2か月間で10個のWebサイトを模写しました。今後実務経験を積んでいくうち、都度最新の実績を更新します。</p>
+        <div class="flex-item">
+          <div class="left-item">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="img/COFFEE.png" alt="COFFEE">
+                  <p class="work-title">カフェのストアサイト</p>
+                  <p class="explain">カフェのWebサイトを制作する想定。見出しの背景に、動きのある画像を挿入するCSSや、リンク、ボタンのホバー時に変化を加えたり、jQueryで行うスムーズなスクロールの方法を学習しました。</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/創作.png" alt="創作">
+                  <p class="work-title">和菓子屋のストアサイト</p>
+                  <p class="explain">和菓子屋のWebサイトを制作する想定。縦書きのテキストを挿入したり、画像上にボタンや説明文を配置するプロパティを学習しました。</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/TOTALLY.png" alt="TOTALLY">
+                  <p class="work-title">アパレルのECサイト</p>
+                  <p class="explain">アパレル店の商品を紹介するECサイトを制作する想定。サイズ表や商品を選択する表を、tableプロパティを用いて作成する方法を学習しました。</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="right-item">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="img/Funiture.png" alt="Funiture">
+                  <p class="work-title">インテリア商品のストアサイト</p>
+                  <p class="explain">インテリア商品のリストを一覧できるストアサイトを制作する想定。ページ遷移の構造やディレクトリの整理の方法、ハンバーガーメニューのjQueryによる作成法を学習しました。</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/WebEntertainmentDesign.png" alt="WebEntertainmentDesign">
+                  <p class="work-title">Web制作会社のコーポレートサイト</p>
+                  <p class="explain">Web制作会社の会社概要を紹介するコーポレートサイトを制作する想定。セクションごとの見出しの修飾に長さ可変の下線を用いる方法を学習しました。</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/Mag88.png" alt="Mag88">
+                  <p class="work-title">書店のストアサイト</p>
+                  <p class="explain">書店の概要を紹介するストアサイトを制作する想定。flexboxを用いたレイアウトの整列の方法を学習しました。</p>
+                </a>
+              </li>            
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="wrapper">
+        <h2 class="section-title">Skills<span>-できること-</span></h2>
+        <dl>
+          <dt>HTML/CSS</dt>
+          <dd>架空Webサイトの模写コーディングを10件作成し、基礎的なコーディングのスキルを習得。transitionプロパティを用いた動的なボタンやリンクの作成や、flexboxを用いたレイアウトの基礎的な技術を習得。</dd>
+          <dt>jQuery</dt>
+          <dd>ハンバーガーメニュー、ページ遷移の動的処理を模写にて習得。animateメソッドを用いた動的なスクロールや、クリック時のクラス付与の使い方を習得。</dd>
+          <dt>PHP・JavaScript・Python</dt>
+          <dd>Progateにて基礎的な知識を学習。要望に応じて追加で学習しながら、サーバーサイド言語の管理・保守のサポートも可能です。</dd>
+        </dl>
+      </section>
+      <section id="contact" class="wrapper">
+        <h2 class="section-title">Contact<span>-お問い合わせ-</span></h2>
+        <p class="lead">ご質問・ご依頼は下記フォームから送信してください。必須項目を入力のうえ「送信」ボタンを押してください。</p>
 
+        <form id="contactForm" action="https://formsubmit.co/ryosei119@gmail.com" method="POST">
+          <div class="hp" aria-hidden="true">
+            <label for="hp">Leave this empty</label>
+            <input id="hp" name="_honey" type="text" autocomplete="off" />
+          </div>
+
+          <div class="grid">
+            <div>
+              <label for="name">お名前 <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" placeholder="例）山田 太郎" required maxlength="100" />
+            </div>
+
+            <div>
+              <label for="company">会社名・団体名</label>
+              <input id="company" name="company" type="text" placeholder="任意" maxlength="100" />
+            </div>
+
+            <div>
+              <label for="email">メールアドレス <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" required maxlength="254" />
+            </div>
+
+            <div>
+              <label for="tel">電話番号</label>
+              <input id="tel" name="tel" type="tel" placeholder="例 090-1234-5678" pattern="[\d\-\+\s\(\)]{6,20}" />
+            </div>
+
+            <div class="full">
+              <label for="message">お問い合わせ内容 <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" placeholder="ご相談内容・ご希望などを具体的にご記入ください。" required maxlength="4000"></textarea>
+            </div>
+          </div>
+
+          <div class="meta">必須項目は * です。個人情報の取り扱いはプライバシーポリシーに準じます。</div>
+
+          <div class="actions">
+            <button type="submit">送信する</button>
+            <button type="reset" class="btn-ghost" aria-label="入力をリセット">リセット</button>
+          </div>
+
+          <!-- JavaScriptによる簡易なクライアント検証とアクセシビリティ向上 -->
+          <noscript>
+            <p class="error">※ JavaScript が無効です。入力後に送信ボタンを押してください。</p>
+          </noscript>
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>&copy; Kizaki Ryosei</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

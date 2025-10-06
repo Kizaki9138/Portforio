@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+html{
+  font-size: 100%;
+}
+body{
+  font-family: 'Raleway' , sans-serif;
+  color: #333;
+  font-size: 0.750rem;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+ul{
+  list-style: none;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*header*/
+#header{
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  padding: 50px 0 30px 0;
+  border-bottom: solid 1px #c3c3c3;
+}
+#header .site-title{
+  width: 106px;
+  line-height:1px;
+  margin: 0 auto;
+}
+#header .site-title a{
+  display: block;
+}
+#header nav{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#header ul{
+  display: flex;
+}
+#header li{
+  font-size: 12px;
+  margin-right: 14px;
+}
+
+/*main*/
+#main{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.item-img{
+  width: 50%;
+}
+.item-info{
+  width: 43%;
+}
+.item-info .item{
+  margin-bottom: 50px;
+}
+.item-info .item .shirt-name{
+  padding: 15px 0;
+  border-top: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+#main .item-info .item p{
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+/*shirt-table*/
+.order-table{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.order-table th, .order-table td{
+  border-right: solid 1px #c3c3c3;
+  font-weight: normal;
+  padding: 10px;
+  text-align: center;
+}
+.order-table .color-size{
+  width: 20%;
+}
+.order-table .quontity{
+  width: 60%;
+  border-right: none;
+}
+.order-table td{
+  border-top: solid 1px #c3c3c3;
+}
+.order-table td:last-child{
+  border-right: none;
+}
+select{
+  appearance: menulist;
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+  border: solid 1px #c3c3c3;
+  width: 100%;
+  padding: 0 10px;
+}
+.cart-button{
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #4B4B4B;
+  color:#fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*size-table*/
+#table{
+  width: 100%;
+  border: solid 1px #c3c3c3;
+}
+#table th{
+  background-color: #ecebeb;
+  text-align: center;
+  padding: 5px;
+  border-bottom: solid 1px #c3c3c3;
+  border-right: solid 1px #c3c3c3;
+  font-weight: normal;
+}
+#table .size{
+  width: 16%;
+}
+#table .chest, #table .weist{
+  width: 28%;
+}
+#table .height{
+  border-right: none;
+  width: 28%;
+}
+#table td{
+  text-align: center;
+  border-right: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
+}
+#table td:last-child{
+  border-right: none;
+}
+#table .last-td, #table .last-th{
+  border-bottom: none;
+}
+
+/*footer*/
+#footer{
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.625rem;
+}
+
+/*mediaQuery*/
+@media screen and (max-width: 896px){
+  #header{
+    margin-bottom: 0;
+    border-bottom: none;
+    padding: 36px 16px 16px 16px;
+  }
+  nav{
+    overflow-x: scroll;
+  }
+  #main{
+    flex-direction: column;
+  }
+  #main .item-img{
+    width: 100%;
+  }
+  .item-info{
+    width: 100%;
+    max-width: 800px;
+    padding: 0 16px;
+  }
+  #main .item-info .shirt-name{
+    margin-top: 10px;
+  }
+}
